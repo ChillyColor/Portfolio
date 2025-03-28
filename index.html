@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aakarsh Portfolio</title>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+  </script>
+      <script type="text/javascript">
+        (function() {
+            emailjs.init({
+              publicKey: "GW-S2k9_rQ204PIQQ",
+            });
+        })();
+    </script>
+        <script type="text/javascript">
+          window.onload = function() {
+              document.getElementById('contact-form').addEventListener('submit', function(event) {
+                  event.preventDefault();
+                  // these IDs from the previous steps
+                  emailjs.sendForm('service_mlkouvg', 'template_1es9e2p', this)
+                      .then(() => {
+                          console.log('SUCCESS!');
+                          alert("Mail Send SuccessFully")
+                          location.reload();
+                      }, (error) => {
+                          console.log('FAILED...', error);
+                      });
+              });
+          }
+      </script>
+  
+
+  <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
+
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="responsive.css">
+</head>
+
+<body>
+  <!-- Navbar header section -->
+  <header class="header">
+    <nav class="navbar">
+      <div class="logo">
+        <h2 class="logo-heading">Aakarsh Divyam</h2>
+      </div>
+      <div class="hamburger" id="hamburger">
+        <i class="fas fa-bars hamburger-icon"></i>
+        <i class="fas fa-times cross-icon"></i>
+      </div>
+      <div class="menu">
+        <ul class="menu-list">
+          <li class="menu-list-items">
+            <a class="links" href="#home">
+              Home
+            </a>
+          </li>
+          <li class="menu-list-items">
+            <a class="links" href="#skills">
+              Skills
+            </a>
+          </li>
+          <li class="menu-list-items">
+            <a class="links" href="#about">
+              About
+            </a>
+          </li>
+          <li class="menu-list-items">
+            <a class="links" href="#projects">
+              Projects
+            </a>
+          </li>
+          <li class="menu-list-items">
+            <a class="links" href="#contact">
+              Contact Me
+            </a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+
+  <section id="home" class="hero">
+    <div class="intro">
+      <div class="headings">
+        <h3 class="greet-heading">Hello, I'm</h3>
+        <h1 class="my-heading">Aakarsh Divyam</h1>
+        <h4 class="sub-heading">
+          A Third year Student at CMR Institue of Technology
+        </h4>
+      </div>
+      <div class="intro-buttons">
+      <a href="#contact"class="btn common-btn">Contact Me</a>
+        <a href="/Portfolio/image/Resume.pdf" class="btn ghost-btn">Get Resume</a>
+      </div>
+    </div>
+  </section>
+  <!-- Skills Section -->
+  <section class="skills" id="skills">
+    <div class="skills-heading">
+      <h1 class="my-heading text-center">Featured Skills</h1>
+    </div>
+    <div class="skills-content">
+      <div class="my-row">
+        <div class="my-col">
+          <div class="my-card port-card">
+            <div class="image">
+
+
+              <img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original-wordmark.svg" />
+
+
+            </div>
+            <h3 class="greet-heading blue-text">Node.js</h3>
+
+          </div>
+        </div>
+        <div class="my-col">
+          <div class="my-card port-card">
+            <div class="image">
+
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/express/express-original.svg" />
+
+            </div>
+            <h3 class="greet-heading blue-text">
+              Express.js
+            </h3>
+          </div>
+        </div>
+        <div class="my-col">
+          <div class="my-card port-card">
+            <div class="image">
+
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg" />
+
+            </div>
+            <h3 class="greet-heading blue-text">React</h3>
+          </div>
+        </div>
+      </div>
+      <div class="my-row">
+        <div class="my-col">
+          <div class="my-card port-card">
+            <div class="image">
+
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postgresql/postgresql-original.svg" />
+
+            </div>
+            <h3 class="greet-heading blue-text">
+              PostgreSQL
+            </h3>
+          </div>
+        </div>
+        <div class="my-col">
+          <div class="my-card port-card">
+            <div class="image">
+
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/java/java-plain.svg" />
+
+            </div>
+            <h3 class="greet-heading blue-text">
+              Java
+            </h3>
+          </div>
+        </div>
+        <div class="my-col">
+          <div class="my-card port-card">
+            <div class="image">
+
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg" />
+
+            </div>
+            <h3 class="greet-heading blue-text">
+              Python
+            </h3>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="about">
+    <div class="about-text">
+      <h1 class="my-heading">About Me</h1>
+      <p class="lead-para">
+        I am Aakarsh Divyam, a Computer Science and Engineering student passionate about web development and
+        problem-solving. Currently, I am honing my skills in full-stack development, exploring both front-end and
+        back-end technologies to build dynamic and scalable web applications. My interest in competitive programming
+        strengthens my problem-solving abilities, enabling me to write efficient and optimized code
+      </p>
+      <p>
+        Driven by a desire to innovate, I continuously explore modern frameworks and best practices to stay ahead in the
+        evolving tech landscape. As an aspiring full-stack developer, I aim to leverage my skills to create impactful
+        digital solutions and enhance user experiences
+      </p>
+    </div>
+    <div class="about-image">
+      <img src="/sampl/image/dexter.png" alt="About Image">
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section class="projects" id="projects">
+    <div class="projects-heading">
+      <h1 class="my-heading text-center">My Projects</h1>
+    </div>
+    <div class="projects-content">
+      <div class="my-row">
+        <div class="my-col">
+          <div class="my-card">
+            <div class="icon">
+              <i class="fa-solid fa-gamepad"></i>
+
+            </div>
+            <h3 class="greet-heading blue-text"><a href="https://chillycolor.github.io/Simons-Game/">Simons Game</a>
+            </h3>
+            <p class="small-para">
+              It is a memory-based game, where players recall and repeat an increasingly complex sequence of colors and
+              sounds. With each correct attempt, the sequence grows longer, challenging memory, focus, and pattern
+              recognition in an engaging way.
+            </p>
+          </div>
+        </div>
+        <div class="my-col">
+          <div class="my-card">
+            <div class="icon">
+              <i class="fa-solid fa-link"></i>
+
+            </div>
+            <h3 class="greet-heading blue-text">
+              <a href="https://surl-sage.vercel.app/">Url Shortener</a>
+            </h3>
+            <p class="small-para">
+              It is a web application that converts long URLs into short, shareable links while ensuring secure and
+              efficient management. It features user authentication for secure link creation and cookie management for
+              seamless access, making it a reliable and user-friendly solution for link management.
+            </p>
+
+          </div>
+        </div>
+        <div class="my-col">
+          <div class="my-card">
+            <div class="icon">
+              <i class="fa-solid fa-building"></i>
+
+            </div>
+            <h3 class="greet-heading blue-text">Tenant Management System</h3>
+            <p class="small-para">
+              Currently Under Construction
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact me section -->
+  <section class="contact" id="contact">
+    <div class="contact-heading">
+      <h1 class="my-heading text-center">Get in Touch</h1>
+
+    </div>
+    <div class="contact-content">
+      <div class="contact-form-container">
+        <form class="contact-form" id="contact-form">
+          <div class="form-group">
+            <input class="form-controls" type="text" placeholder="Your Name" required>
+            <input class="form-controls" type="email" placeholder="Your Email" required>
+          </div>
+          <div class="form-group">
+            <input class="form-controls" type="tel" placeholder="Your Phone(Optional)">
+            <input class="form-controls" type="text" placeholder="Subject">
+          </div>
+          <textarea class="form-controls message-box" placeholder="Write your message" required></textarea>
+          <input type="submit" class="form-btn" value="Send Message">
+
+        </form>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Footer section -->
+  <footer class="footer">
+    <div class="footer-content text-center">
+      <ul class="social-links">
+        <li><a href="https://github.com/ChillyColor"><i class="fab fa-github"></i></a></li>
+        <li><a href="https://leetcode.com/u/Aakarsh150461/"><i class="fa-solid fa-code"></i></a></li>
+
+        <li><a href="https://www.instagram.com/aakarshdiv?igsh=MWRqeHl3bG5ibWpuaQ=="><i
+              class="fab fa-instagram"></i></a></li>
+        <li><a href="https://www.linkedin.com/in/aakarsh-divyam-291512309/"><i class="fab fa-linkedin-in"></i></a></li>
+      </ul>
+    </div>
+  </footer>
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/js/all.min.js"
+    integrity="sha512-uKQ39gEGiyUJl4AI6L+ekBdGKpGw4xJ55+xyJG7YFlJokPNYegn9KwQ3P8A7aFQAUtUsAQHep+d/lrGqrbPIDQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer">
+    </script>
+  <script src="script.js"></script>
+</body>
+
+</html>
